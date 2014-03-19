@@ -6,7 +6,7 @@ domain = 'cloud.v.lh'
 nodes = [
 	{ :hostname => 'cl1', :ip => '192.168.54.100', :box => 'vagrant-centos6.5', 
             :url => 'https://dl.dropboxusercontent.com/u/15488013/vagrant-boxes/vagrant-centos6.5.box',
-            :checksum => 'f42e587467d2415dd77e3c53642d882c' }
+            :checksum => '76b0c9043d9723d68b9777f15047d432' }
 ]
 
 Vagrant.configure("2") do |config|
