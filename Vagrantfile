@@ -6,6 +6,9 @@ domain = 'cloud.v.lh'
 nodes = [
 	{ :hostname => 'cl1', :ip => '192.168.54.100', :box => 'vagrant-centos6.5', 
             :url => 'https://dl.dropboxusercontent.com/u/15488013/vagrant-boxes/vagrant-centos6.5.box',
+            :checksum => '76b0c9043d9723d68b9777f15047d432' },
+	{:hostname => 'cl2', :ip => '192.168.54.101', :box => 'vagrant-centos6.5',
+            :url => 'https://dl.dropboxusercontent.com/u/15488013/vagrant-boxes/vagrant-centos6.5.box',
             :checksum => '76b0c9043d9723d68b9777f15047d432' }
 ]
 
