@@ -1,6 +1,0 @@
-[submodule "puppet/modules/puppet-nginx"]
-	path = puppet/modules/puppet-nginx
-	url = https://github.com/thias/puppet-nginx.git
-[submodule "puppet/modules/nginx"]
-	path = puppet/modules/nginx
-	url = https://github.com/thias/puppet-nginx.git
