@@ -1,0 +1,15 @@
+<%= @logrotate_files %> {
+<% if @logrotate_freq -%>
+    <%= @logrotate_freq %>
+<% end -%>
+<% @logrotate_opts.each do |opt| -%>
+    <%= opt %>
+<% end -%>
+    postrotate
+<% if scope.lookupvar('::operatingsystem') =~ /^(Fedora|RedHat|CentOS)$/ -%>
+        /sbin/service httpd reload > /dev/null 2>/dev/null || true
+<% else -%>
+        /bin/kill -HUP `cat /var/run/httpd.pid 2>/dev/null` 2>/dev/null || true
+<% end -%>
+    endscript
+}
